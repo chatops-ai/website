@@ -1,116 +1,31 @@
-# Site Settings
-encoding                 : "utf-8"
-locale                   : "en"
-title                    : "Sparrow"
-title_separator          : "-"
-description              : "A clean and minimal theme for writers."
-favicon                  : "/assets/images/bird.png"
-avatar                   : "/assets/images/bird.png"
-#url                      : "https://theconfused.me" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/sparrow" # the subpath of your site, e.g. "/blog" leave blank if no subpath
+# general configuration
+url: http://chatops.ai
+baseurl: ''
 
-# Site Author
-author:
-  name                   : "Lingyi" # appears in the footer and atom feed
+# compass configuration
+compass:
+  # an avatar or logo (optional)
+  logo: "/images/gunter.png"
+  # author will appear under the avatar (optional)
+  author: "ChatOps.ai"
+  # tagline will appear under the title (optional)
+  tagline: "Definition: The use of trained bots for traditional DevOp and Operations related tasks, allowing custom extensions and enabling natural language communication between the bot and user."
+  # if include_content is true, the contents of the content.html include will be
+  # added right above the generated item list, if present
+  include_content: true
+  # if include_analytics is true, the content of the analytics.html include will
+  # be added at the end of the <head> section. You can add your Google Analytics
+  # Tracking Code to that file.
+  include_analytics: false
+  # Twitter @username (as defined by the Twitter Card specs)
+  twitter: "chatopsai"
 
-comments                 : true # set it to false to disable comments
-disqus:
-  shortname              : # sparrow-theme # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+# exclude
+exclude: ["CNAME", "Gemfile", "Gemfile.lock", "LICENSE", "README.md"]
 
-atom_feed:
-  path                   : # blank (default) uses feed.xml
-
-og_image                 : "/assets/images/bird.png" # Open Graph/Twitter default site image, optional for seo and social sharing
-
-# Social sharing
-twitter:
-  username               : # optional, for social sharing
-
-# Analytics
-analytics:
-  google:
-    tracking_id          : # add your google tracking id here
-
-# Reading Files
-include:
-  - _pages
-# Files excluded from Jekyll builds
-exclude:
-- README.md
-- LICENSE
-- Gemfile
-- Gemfile.lock
-
-
-# Conversion
+# Dependencies
 markdown: kramdown
 highlighter: rouge
-lsi: false
-excerpt_separator: "\n\n"
-incremental: false
 
-
-# Markdown Processing
-kramdown:
-  input: GFM
-  hard_wrap: false
-  auto_ids: true
-  footnote_nr: 1
-  entity_output: as_char
-  toc_levels: 1..6
-  smart_quotes: lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-
-
-# Sass/SCSS
-sass:
-  sass_dir: _sass
-  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
-
-
-# Outputting
-permalink: /blog/:title/
-paginate: 5 # amount of posts to show
-paginate_path: "/blog/page:num/"
-timezone: # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
-
-collections:
-  poetry:
-    output: true
-    permalink: /:collection/:title/
-
-# Plugins
-gems:
-  - jekyll-paginate
-  - jekyll-feed
-
-# mimic GitHub Pages with --safe
-whitelist:
-  - jekyll-paginate
-  - jekyll-feed
-
-
-# Front matter defaults
-defaults:
-  # _pages
-  - scope:
-      path: ""
-      type: pages
-    values:
-      layout: page
-      comments: false
-  # _posts
-  - scope:
-      path: ""
-      type: posts
-    values:
-      layout: post
-      comments: true
-      share: true
-  # _poetry
-  - scope:
-      path: ""
-      type: poetry
-    values:
-      layout: post
-      share: false
+# Permalinks
+permalink: pretty
