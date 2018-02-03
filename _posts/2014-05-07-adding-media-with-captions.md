@@ -6,7 +6,6 @@ type:			post
 navigation: 	false
 
 date:   		2014-05-07
-excerpt: 		Adding <b>images</b>, <b>videos</b> and <b>audio files</b> to a website shouldn't be difficult. That's why <i>Hashtag for Jekyll</i> includes some <b>simple short codes</b> which make it easy to add all of that — even better, you can also add captions and links to each one.
 categories:		guides
 gradient: 		5
 image: 			header-2.jpg

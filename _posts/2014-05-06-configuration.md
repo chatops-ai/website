@@ -6,7 +6,6 @@ type:			post
 navigation: 	false
 
 date:   		2014-05-06
-excerpt: 		Wether you'd like to change the sites <b>title</b>, <b>description</b> and <b>contact email address</b> or just like to enable the <b>comment system</b> or <b>Google Analytics</b> — <i>all of it can be done in one single place</i>.
 categories:		guides
 gradient: 		3
 image: 			header-1.jpg
