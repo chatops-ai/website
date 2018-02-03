@@ -1,0 +1,10 @@
+#!/bin/bash
+# takes in a commit message
+# and builds the site, publishing
+# it to github pages
+#
+#
+jekyll build
+git add -A
+git commit -m "$1"
+git push
