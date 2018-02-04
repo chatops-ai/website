@@ -9,7 +9,7 @@ compass:
   # author will appear under the avatar (optional)
   author: "ChatOps.ai"
   # tagline will appear under the title (optional)
-  tagline: Building interactive, intelligent chat bots through the use of NLU. Intrigued? <a href="http://gunter.chat/"> Meet Gunter. </a>
+  tagline: "Building interactive, intelligent chat bots through the use of NLU. Intrigued? <a href='http://gunter.chat/'>Meet Gunter.</a>"
   # if include_content is true, the contents of the content.html include will be
   # added right above the generated item list, if present
   include_content: true
